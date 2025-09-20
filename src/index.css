@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-md transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white border border-gray-200 rounded-lg shadow-sm;
+  }
+}
+
+/* React Big Calendar Custom Styles */
+.rbc-calendar {
+  @apply bg-transparent text-gray-900;
+}
+
+.rbc-header {
+  @apply bg-gray-50 text-gray-700 font-medium py-3 border-b border-gray-200;
+}
+
+.rbc-month-view {
+  @apply border border-gray-200 rounded-lg overflow-hidden;
+}
+
+.rbc-date-cell {
+  @apply text-gray-900;
+}
+
+.rbc-off-range-bg {
+  @apply bg-gray-50;
+}
+
+.rbc-today {
+  @apply bg-blue-50;
+}
+
+.rbc-event {
+  @apply bg-blue-600 text-white font-medium rounded px-2 py-1 text-sm;
+}
+
+.rbc-event-content {
+  @apply text-sm font-medium;
+}
+
+.rbc-slot-selection {
+  @apply bg-blue-100;
+}
+
+.rbc-time-view {
+  @apply border border-gray-200 rounded-lg overflow-hidden;
+}
+
+.rbc-time-header {
+  @apply bg-gray-50 border-b border-gray-200;
+}
+
+.rbc-time-header-content {
+  @apply text-gray-700 font-medium;
+}
+
+.rbc-timeslot-group {
+  @apply border-b border-gray-100;
+}
+
+.rbc-time-slot {
+  @apply text-gray-600;
+}
+
+.rbc-day-slot .rbc-events-container {
+  @apply mr-0;
+}
+
+.rbc-current-time-indicator {
+  @apply bg-red-500;
+}
